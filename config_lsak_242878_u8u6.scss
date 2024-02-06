@@ -1,0 +1,12 @@
+banana
+
+console.log(getRandomString());
+
+banana * 10
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const findLargestNumber = numbers => Math.max(...numbers);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
