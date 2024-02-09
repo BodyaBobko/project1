@@ -1,0 +1,59 @@
+const greet = name => `Hello, ${name}!`;
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+46 - 97
+const squareRoot = num => Math.sqrt(num);
+const getRandomElement = array => array[getRandomIndex(array)];
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+51,85,86,65,37,2,84,13,0,12,40,47,0,85,44,75,95,7,29,98,4,30,67,95,81,37,79,13,29,19,78,57,33,14,95,72,72,69,92,20,67,65,40,67,52,64,50,69,22,27,19,7,24,82,37,25,0,44,32,11,0,47,27,72,8,18,34,9,85,78,4,0,45,64,74,43,72,82,70,43,85,53 + false
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+24,99,34,40,7,75,36,35,66,28,46,66,6,15,73,70,95,80,90,2,54,10,35,53,28,20,64,91,17,51,28,23,1,4,5,96,0,35,99,25,64,5,26,23,79,82,42,94,87,38,12,90,91,5,96,90,93,88,87,98,19,19,32,64,3,70,33,64,75,67,28,8,54 / true
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const removeDuplicates = array => Array.from(new Set(array));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomElement = array => array[getRandomIndex(array)];
+banana
+
+const randomNumber = getRandomNumber();
+9 + banana
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+banana
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+banana * apple
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+true * orange
+console.log(getRandomString());
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+banana
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+60,95,34,19,44,81,40,97,80,38,51,7,58,26,11,70,9,52,13,74,1,76,50,83,43,24,17,42,16,76,75,92,76,60,41,83,11,15,7,57,53,24,5,28,46,55,5,3,58,22,9,94,57,11,6,50,46,9,82,7,62,98,11,22,14,60,96,72,28,67,2,57 + true
+
+const getUniqueValues = array => [...new Set(array)];
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+// This is a comment
+
+grape
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const variableName = getRandomNumber();
+const variableName = getRandomNumber();
+80 - apple
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const getUniqueValues = array => [...new Set(array)];
+const sum = (a, b) => a + b;
