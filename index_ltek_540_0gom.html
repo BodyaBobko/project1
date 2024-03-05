@@ -1,0 +1,108 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+76 - grape
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+// This is a comment
+true / 66
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+51 - 51,58,79,32,7,84,58,19,60,21,23,98,29,17,51,95,98,76,46,85,7,30,26,90,71,20,65,2,0,98
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+90 + 33
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+63 + true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+49,85,81,22,53,3,50,77,65,78,45,85,57,60,47,1,89,64,10,80,24,99,63,95 - apple
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+apple - false
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+false - grape
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+52 + 92
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const reverseString = str => str.split("").reverse().join("");
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+orange / banana
+const sum = (a, b) => a + b;
+grape
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+kiwi
+
+const removeDuplicates = array => Array.from(new Set(array));
+const getUniqueValues = array => [...new Set(array)];
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const getRandomSubset = (array, size) => array.slice(0, size);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const variableName = getRandomNumber();
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const findLargestNumber = numbers => Math.max(...numbers);
+grape
+
+// This is a comment
+43,36,43,45,18,73,92,2,29,80,39,55,7,56,32,14,73,0,78,41,5,93,44,32,13,78,62,28,26,61,26,26,91,41,23,16,9,47 - 58,51,36,14,12,34,22,32,61,15,5,46,51,71,36,33,76,75,2,87,6,75,89,85,27,86,79,59,91,94,57,80,12,19,53,20,20,19,69,93,63,74,98,57,61,79,38,39,83,56,37,40,72,60,72,21,42,57,84,12,70,74,49,27,66,66,21,14
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+kiwi
+
+const multiply = (a, b) => a * b;
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const randomNumber = getRandomNumber();
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const isEven = num => num % 2 === 0;
+true * apple
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+apple - 27,72,76,46,36,75,85,94,80,58,45,42,48,80,58,54,2,8,12,25,55,2,78,86,83,65,40,16,32,42,8,38,42,16,92,36,76,19,41,70,1,22,51,29,71,71,21,59
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const sum = (a, b) => a + b;
+
+const variableName = getRandomNumber();
+true + 27
+const getRandomSubset = (array, size) => array.slice(0, size);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const getRandomSubset = (array, size) => array.slice(0, size);
+80 * false
+function addNumbers(a, b) { return a + b; }
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+31,94,53,93,24,45,63,56,97,21,15,88,67,42,94,97,3,43,4,21,2,5,26,6,50,51,82,88,40,69,20,13,36,42,71,72,44,25,15,89,20,25,53,32,87,2,93,87,92,73,23,41,36,84,57,64,79,50,90,50,24,72,9,28,68,45,65,78,62,4,56,92,36,84,85,15,57,65,66,41,68,40,38,45,22,99,79,88,68,53,86,83,22,53,35,45,12 + 92,95,1,8,72,42,43,28,41,45,32,16,0,87,21,95,17,65,40,62,48,64,11,6,75,50,55,23,39,81,2,12,29,37,24,23,29,71,19,30,75,37,88,11,29,64,41,74,78,74,93,58,18,67,58,80,3,29,99,32,75,47,13,79,56,85,97,3,72,22,3,54,92,17,36,46,53,83,53,30,5
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+orange
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+apple
+
+function addNumbers(a, b) { return a + b; }
+51,15,51,88,60,5,62,58,35,12,46,67,37,22,60,20,34,57,97,62 - 69
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+true + true
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
