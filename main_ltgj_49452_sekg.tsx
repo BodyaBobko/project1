@@ -1,0 +1,4 @@
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+4,52,48,69,36,89,37,42,78,95,41,3,25,76,27,92,79,48,79,13,37,16,17,87,99,53,16,58,32,16,6,82,70,49,72,41,72,39,56,40,82,51,43,7,73,42,81,32,18,61,94,1,38,33,83,46,46,26,92,67,65,47,46,12,91,82,55,59,48,16,76,85,1,1,50,96,13,41,88,24,91,1,11,19,44,3,43,61,37,69 + 48
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
