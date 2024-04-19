@@ -1,0 +1,98 @@
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+apple * 75
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const greet = name => `Hello, ${name}!`;
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+apple
+
+const variableName = getRandomNumber();
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+grape
+
+const variableName = getRandomNumber();
+
+const findLargestNumber = numbers => Math.max(...numbers);
+22,54,23,91,93,78,51,73,65,10,66,86,34,32,48,40,59,86,99,72,98,98,70,49,65,89,74,47,11,16,83,33,48,75,28,39,91,37,0,50,68,50,51,87,6,60,26,70,15,53,41,1,76,55,52,20,44,99,52,54,29,34,52,6,40,94,93,22,38,30,61,39,57,36,16,90,92,46,70,65,90,12,27,14,33,47,20,13,9,62,5 - banana
+const randomNumber = getRandomNumber();
+banana * grape
+const reverseString = str => str.split("").reverse().join("");
+18 - orange
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+58,50,15,95,74,96,78,8,18,83,66,69,37 - 78
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+4 * true
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+orange / false
+const randomNumber = getRandomNumber();
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const squareRoot = num => Math.sqrt(num);
+const capitalizeString = str => str.toUpperCase();
+50,78,45,36,17,62,30,45,10,40,33,69,34,42,19,58,78,75,68,18,99,63,9,93,59,20,77,10,74,5,83,71,6,98,31,9,91,1 / kiwi
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const getUniqueValues = array => [...new Set(array)];
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+12,4,80,81,99,38,95,49,70,96,10,33,34,35,72,49,31,95,57,71,64,51,75,45,52,72,36,90,71,10,56 + 1
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+kiwi * apple
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+false * 31
+const getRandomSubset = (array, size) => array.slice(0, size);
+68,22,12,8,68,28 * 26
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+24 + false
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+false - 82,96,8,9,60,2,16,38,31,80,66,54,34,52,11,4,71,62,88,61,28,86,72,61,34,7,82,32,39,46,7,77,43,10,35,8,88,18,59,38,16,89,48,69,64,52,59,28,90,36,90,60,37,40,22,50,21,47,69,91,53,91,99,56,66,55,71,59,59,39,44,41,94,63,16,39,56,19,55,99,0,71,51,68,87,5,74,42,13,60
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+84 * kiwi
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const findLargestNumber = numbers => Math.max(...numbers);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const multiply = (a, b) => a * b;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+80 * kiwi
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+96 + 58
+const isEven = num => num % 2 === 0;
+const greet = name => `Hello, ${name}!`;
+67 - 57
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+grape
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+false - apple
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
